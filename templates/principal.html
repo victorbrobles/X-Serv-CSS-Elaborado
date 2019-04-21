@@ -1,0 +1,12 @@
+{% extends "templates.html" %}
+
+{% block content %}
+<ul>
+  {% if item_list|length == 0 %}
+    Lista vacia
+  {% endif %}
+  {% for item in item_list %}
+    <li><a href="{{item.clave}}">{{item.clave}}</a></li>
+  {% endfor %}
+</ul>
+{% endblock %}
