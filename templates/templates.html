@@ -1,0 +1,13 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Django gestor de contenidos </title>
+  <link rel="stylesheet" href="{% static "gestor/estilo.css" %}">
+</head>
+<body>
+   <h1> CMS con titulares de barrapunto.com </h1>
+   {% block content %}{{content|safe}}{% endblock %}
+</body>
+</html>
